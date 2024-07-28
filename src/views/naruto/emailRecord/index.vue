@@ -52,7 +52,7 @@
 
     <el-table v-loading="loading" :data="emailRecordList" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center" />
-      <el-table-column label="编号" align="center" prop="id" />
+      <!-- <el-table-column label="编号" align="center" prop="id" /> -->
       <el-table-column label="发件人" align="center" prop="fromMember" />
       <el-table-column label="收件人" align="center" prop="toMember" />
       <el-table-column label="主题" align="center" prop="subject" />

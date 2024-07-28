@@ -9,6 +9,14 @@ export function listMember(query) {
   })
 }
 
+// 查询成员信息列表
+export function listMemberAll() {
+  return request({
+    url: '/naruto/member/listAll',
+    method: 'get',
+  })
+}
+
 // 查询成员信息详细
 export function getMember(id) {
   return request({

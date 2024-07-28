@@ -29,14 +29,14 @@
         <el-date-picker v-model="daterangeJoinTime" style="width: 240px" value-format="yyyy-MM-dd" type="daterange"
           range-separator="-" start-placeholder="开始日期" end-placeholder="结束日期"></el-date-picker>
       </el-form-item>
-      <el-form-item label="首次加入">
+      <!-- <el-form-item label="首次加入">
         <el-date-picker v-model="daterangeCreatedTime" style="width: 240px" value-format="yyyy-MM-dd" type="daterange"
-          range-separator="-" start-placeholder="开始日期" end-placeholder="结束日期"></el-date-picker>
+          range-separator="-" start-placeholder="开始日期" end-placeholder="结束日期" :disabled="true"></el-date-picker>
       </el-form-item>
       <el-form-item label="退出时间">
         <el-date-picker v-model="daterangeUpdatedTime" style="width: 240px" value-format="yyyy-MM-dd" type="daterange"
-          range-separator="-" start-placeholder="开始日期" end-placeholder="结束日期"></el-date-picker>
-      </el-form-item>
+          range-separator="-" start-placeholder="开始日期" end-placeholder="结束日期" :disabled="true"></el-date-picker>
+      </el-form-item> -->
       <el-form-item>
         <el-button type="primary" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
         <el-button icon="el-icon-refresh" size="mini" @click="resetQuery">重置</el-button>
@@ -259,7 +259,7 @@ export default {
       },
       // 列信息
       columns: [
-        { key: 0, label: `用户编号`, visible: true },
+        { key: 0, label: `用户编号`, visible: false },
         { key: 1, label: `游戏ID`, visible: true },
         { key: 2, label: `游戏昵称`, visible: true },
         { key: 3, label: `身份类型`, visible: true },
@@ -267,8 +267,8 @@ export default {
         { key: 5, label: `战力`, visible: true },
         { key: 6, label: `qq`, visible: true },
         { key: 7, label: `最近时间`, visible: true },
-        { key: 8, label: `首次加入时间`, visible: true },
-        { key: 9, label: `退出时间`, visible: true },
+        { key: 8, label: `首次加入时间`, visible: false },
+        { key: 9, label: `退出时间`, visible: false },
         { key: 10, label: `加入天数`, visible: true },
       ],
       // 用户导入参数

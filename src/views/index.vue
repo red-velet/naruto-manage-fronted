@@ -8,13 +8,15 @@
         </p>
         <p>
           <el-button type="primary" size="mini" icon="el-icon-cloudy" plain
-            @click="goTarget('https://gitee.com/y_project/RuoYi-Vue')">访问码云</el-button>
-          <el-button size="mini" icon="el-icon-s-home" plain @click="goTarget('http://ruoyi.vip')">访问主页</el-button>
+            @click="goTarget('http://ruoyi.vip')">访问若依</el-button>
+          <el-button size="mini" icon="el-icon-s-home" plain
+            @click="goTarget('https://github.com/red-velet/naruto-manage-backend')">项目源码</el-button>
         </p>
       </el-col>
 
       <el-col :sm="24" :lg="12" style="padding-left: 50px">
-        <img src="https://cloud.greennut.icu/naturo/club.jpg" alt="描述图片内容" style="max-width: 100%; max-height: 300px;">
+        <img src="https://cloud.greennut.icu/note/club_728.jpg" alt="描述图片内容"
+          style="max-width: 100%; max-height: 300px;">
 
       </el-col>
     </el-row>
